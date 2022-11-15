@@ -1,6 +1,6 @@
-import puppeteer from 'puppeteer';
-import express from 'express';
-import cors from 'cors';
+const puppeteer = require("puppeteer");
+const express = require("express");
+const cors = require("cors");
 
 const app = express();
 app.use(express.json());
@@ -75,4 +75,4 @@ const runScrape = async (url, htmlString) => {
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server is listening on port ${port}`));
 
-export default app;
+module.exports = app;
