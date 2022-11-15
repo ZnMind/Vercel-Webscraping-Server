@@ -72,3 +72,5 @@ const runScrape = async (url, htmlString) => {
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server is listening on port ${port}`));
+
+export default app;
